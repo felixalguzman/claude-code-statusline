@@ -18,6 +18,15 @@ Powerline-style status line for [Claude Code](https://claude.com/claude-code). R
 
 Narrow terminals wrap onto a second line (identity row / metrics row).
 
+## Optional segments
+
+A couple of segments depend on your personal setup and simply skip themselves if the inputs aren't present — the script still runs fine without them:
+
+- **Profile** reads the `CLAUDE_CONFIG_DIR` env var. A path containing `claude-work` shows `WORK`; anything else shows `PERSONAL`. Unset → `PERSONAL`.
+- **Caveman mode** reads an optional flag file `$CLAUDE_CONFIG_DIR/.caveman-active` (falls back to `~/.claude/.caveman-active`). It holds a single level word (`lite`/`full`/`ultra`/…) and is written by the [caveman](https://github.com/anthropics/skills) Claude Code skill. No file → segment hidden. Not using caveman → ignore it.
+
+No Claude Code skills or MCP servers are required to run the status line.
+
 ## Requirements
 
 - `bash`
