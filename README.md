@@ -4,6 +4,8 @@ Powerline-style status line for [Claude Code](https://claude.com/claude-code). R
 
 ![style: powerline](https://img.shields.io/badge/style-powerline-blue)
 
+![preview](preview.png)
+
 ## Segments
 
 - **Profile** — `WORK` (red) / `PERSONAL` (blue), chosen from `CLAUDE_CONFIG_DIR`
