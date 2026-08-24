@@ -11,7 +11,7 @@ Powerline-style status line for [Claude Code](https://claude.com/claude-code). R
 - **Profile** — `WORK` (red) / `PERSONAL` (blue), chosen from `CLAUDE_CONFIG_DIR`
 - **Caveman mode** — shown when a `.caveman-active` flag file exists, with level
 - **Directory** — basename of cwd
-- **Git** — branch (`*` if dirty) + remote repo path, tagged `gh`/`gl`/`git`
+- **Git** — branch (`*` if dirty) + remote repo path, tagged `gh`/`gl`/`gt` (Gitea/Codeberg)/`git`
 - **Model** — display name
 - **Lines changed** — `+added -removed`
 - **Cost** — session cost in USD
