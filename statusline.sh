@@ -54,6 +54,7 @@ if [ -n "$dir" ]; then
       case "$host" in
         *github*) tag="gh";  rfg=75  ;;
         *gitlab*) tag="gl";  rfg=208 ;;
+        *gitea*|*codeberg*) tag="gt"; rfg=107 ;;
         *)        tag="git"; rfg=251 ;;
       esac
       [ -n "$path" ] && push "${tag}:${path}" "$rfg" 237
